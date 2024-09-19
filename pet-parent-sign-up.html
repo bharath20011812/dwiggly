@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dwiggly</title>
+    <!-- Required css -->
+
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/owl.theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- custom css  -->
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body>
+
+    <!-- header sec starts -->
+    <header>
+        <nav class="navbar dwiggy-header navbar-expand-lg "><!-- nav starts -->
+            <div class="container-fluid"><!-- container starts -->
+                <a class="navbar-brand" href="#"><img src="./image/dwiggy-logo.png" alt=""></a>
+                <!--  -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--  -->
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <ul class="navbar-nav dwiggyhead-page">
+                            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Our Services</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                        </ul>
+                        <div class="login-headbtn">
+                            <ul class="navbar-nav">
+                                <li class="nav-item vendor"><a class="nav-link" href="#">Login for Vendors</a></li>
+                                <li class="nav-item parent"><a class="nav-link" href="#">Login for Pet Parents</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+
+            </div><!-- container end -->
+        </nav><!-- nav end -->
+    </header>
+    <!-- Banner section start  -->
+    <section class="petparent-banner patent-mainbg">
+        <div class="container">
+            <div class="banner-main-div">
+                <div class="banner-img-div">
+                    <img title="" src="./image/pet-parent-banner-img.png" alt="Pet Parent Banner"
+                        title="Pet Parent Banner">
+                </div>
+                <div class="form-div">
+                    <h3 class="sub-heading">Pet Parent Information</h3>
+                    <form action="/submit" method="post">
+                        <div class="form-container">
+                            <!-- Column 1 -->
+                            <div class="column">
+                                <div class="form-group">
+
+                                    <input type="text" id="parent-name" name="parent_name" required
+                                        placeholder="Pet Parent Name">
+                                </div>
+
+                                <div class="form-group">
+
+                                    <input type="number" id="pet-age" name="pet_age" required placeholder="Pet Age">
+                                </div>
+
+                                <div class="form-group">
+
+                                    <input type="tel" id="parent-contact" name="parent_contact" pattern="[0-9]{10}"
+                                        title="Please enter a valid 10-digit phone number" required
+                                        placeholder="Pet Parent Contact Number">
+                                </div>
+
+                                <div class="form-group">
+
+                                    <input type="email" id="email" name="email" required placeholder="Email ID">
+                                </div>
+
+                                <div class="form-group">
+
+                                    <input type="text" id="city" name="city" required placeholder="City">
+                                </div>
+
+                                <div class="form-group">
+
+                                    <input type="password" id="password" name="password" required
+                                        placeholder="Password">
+                                </div>
+                            </div>
+
+                            <!-- Column 2 -->
+                            <div class="column">
+                                <div class="form-group">
+
+                                    <input type="text" id="pet-name" name="pet_name" required placeholder="Pet Name">
+                                </div>
+
+                                <div class="form-group">
+
+                                    <div class="select-wrapper">
+                                        <select class="select" name="pet_breed" required>
+                                            <option value="">Pet Breed</option>
+                                            <option value="breed1">Breed 1</option>
+                                            <option value="breed2">Breed 2</option>
+                                            <option value="breed3">Breed 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+
+                                    <input type="tel" id="alternate-contact" name="alternate_contact"
+                                        pattern="[0-9]{10}" title="Please enter a valid 10-digit phone number"
+                                        placeholder="Alternate Contact Number">
+                                </div>
+
+                                <div class="form-group">
+
+                                    <input type="text" id="location-access" name="location_access"
+                                        placeholder="Location Access">
+                                </div>
+
+                                <div class="form-group">
+
+                                    <input type="text" id="state" name="state" required placeholder="State">
+                                </div>
+
+                                <div class="form-group">
+
+                                    <input type="password" id="confirm-password" name="confirm_password" required
+                                        placeholder="Confirm Password">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Radio Button -->
+                        <div class="radio-btn d-flex">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Save this information for next time
+                            </label>
+
+                        </div>
+                        <!-- Sign Up Button -->
+                        <div class="form-footer">
+                            <button>sign up</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Banner section end -->
+    <!-- How We Operate section start  -->
+    <section class="We-Operate-section">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="We-Operate-frs text-center">
+                <h2 class="sub-heading">How We Operate?</h2>
+                <p class="main-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rutrum elit ante,
+                    sed sollicitudin
+                    diam gravida vitae. Integer vel urna lorem. Nulla porttitor eu nisl in facilisis. Nam suscipit
+                    sapien felis, in blandit est pellentesque vitae. Curabitur vitae vehicula est, at cursus ligula.</p>
+            </div>
+
+            <!-- Sub Sections -->
+            <div class="We-Operate-sub-main">
+                <!-- Sub Section 1 -->
+                <div class="we-operate-sub-1 sub-div-1">
+                    <img title="" src="./image/we-oprate-img-1.png" alt="Pet Parents Sign Up">
+                    <h4>Pet Parents Sign Up</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rutrum elit ante, sed sollicitudin
+                        diam gravida vitae. Integer vel urna lorem. Nulla porttitor eu nisl in facilisis.</p>
+                </div>
+
+                <!-- Sub Section 2 -->
+                <div class="we-operate-sub-2 sub-div-1">
+                    <img title="" src="./image/we-oprate-img-2.png" alt="Pet Service Providers">
+                    <h4>Pet Service Providers</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rutrum elit ante, sed sollicitudin
+                        diam gravida vitae. Integer vel urna lorem. Nulla porttitor eu nisl in facilisis.</p>
+                </div>
+
+                <!-- Sub Section 3 -->
+                <div class="we-operate-sub-3 sub-div-1">
+                    <img title="" src="./image/we-oprate-img-3.png" alt="Booking Process">
+                    <h4>Booking Process</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rutrum elit ante, sed sollicitudin
+                        diam gravida vitae. Integer vel urna lorem. Nulla porttitor eu nisl in facilisis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- How We Operate section end  -->
+    <!-- counter section -->
+    <section class="counter-protection">
+        <div class="container">
+            <div class="protection-say row">
+                <div class="count-outer1 col-lg-3">
+                    <h2 data-max="450" id="test"><span>+</span></h2>
+                    <p>Satisfied clients</p>
+                </div>
+                <div class="count-outer2 col-lg-3">
+                    <h2 data-max="85" id="test"><span>+</span></h2>
+                    <p>Awards Win</p>
+                </div>
+                <div class="count-outer3 col-lg-3">
+                    <h2 data-max="450" id="test"><span>+</span></h2>
+                    <p>Satisfied clients</p>
+                </div>
+                <div class="count-outer4 col-lg-3">
+                    <h2 data-max="99.99" id="test"><span>%</span></h2>
+                    <p>Protection</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Why Choose Dwiggly section -->
+    <section class="why-choose-section patent-mainbg">
+        <div class="container">
+            <!-- First Sub Section -->
+            <div class="whychoose-sub-1-main">
+                <div class="img-whychoose">
+                    <img title="" src="./image/why-choose-dwiggly.png" alt="Why Choose Dwiggly">
+                </div>
+                <div class="content-div-why">
+                    <h2 class="sub-heading">Why Choose Dwiggly?</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rutrum elit ante, sed sollicitudin
+                        diam gravida vitae.</p>
+                    <p>Curabitur vitae vehicula est, at cursus ligula. Nam consectetur ante in nunc pulvinar, ac
+                        vehicula lectus malesuada.</p>
+                    <p>Donec ac vestibulum risus. Morbi consequat ipsum massa, sed finibus sem lacinia dapibus. Sed quis
+                        felis sit amet turpis venenatis porta ut a magna.</p>
+                    <p>Aenean varius quis nisl vel pharetra. Fusce mollis id magna a commodo. Ut dictum tortor ac dictum
+                        pulvinar.</p>
+                </div>
+            </div>
+
+            <!-- Second Sub Section -->
+            <div class="whychoose-sub-1-main">
+                <div class="content-div-why">
+                    <h2 class="sub-heading">Lorem ipsum dolor sit amet</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rutrum elit ante, sed sollicitudin
+                        diam gravida vitae.</p>
+                    <p>Curabitur vitae vehicula est, at cursus ligula. Nam consectetur ante in nunc pulvinar, ac
+                        vehicula lectus malesuada.</p>
+                    <p>Donec ac vestibulum risus. Morbi consequat ipsum massa, sed finibus sem lacinia dapibus. Sed quis
+                        felis sit amet turpis venenatis porta ut a magna.</p>
+                    <p>Aenean varius quis nisl vel pharetra. Fusce mollis id magna a commodo. Ut dictum tortor ac dictum
+                        pulvinar.</p>
+                </div>
+                <div class="img-whychoose">
+                    <img title="" src="./image/why-choose-dwiggly-2.png" alt="Why Choose Dwiggly">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testmonial start -->
+    <section class="pet-testmonial">
+        <div class="container">
+            <div class="testmonial-main row"><!-- row start -->
+                <!-- col-1 start -->
+                <div class="client-saylft col-lg-6">
+                    <h6 class="sub-title">TESTIMONIALS</h6>
+                    <h2 class="sub-heading">What Our Client’s Have to Say!</h2>
+                    <div class="client-testimonial owl-carousel owl-theme">
+                        <div class="item">
+                            <p class="main-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                                cursus
+                                euismod
+                                blandit. Nunc elitenim, vestibulum in commodo id, varius sagittis nibh. Aliquam
+                                enim
+                                est, condimentum ut
+                                consectetur ac, mollis et enim. Pellentesque porttitor nunc et ipsum ornare,
+                                eget
+                                tincidunt quam
+                                cursus. Aliquam volutpat elit ornare dapibus pharetra. Nunc purus urna, gravida
+                                ac
+                                fermentum et,
+                                ultricies sit amet enim. Cras tempus sem dapibus arcu luctus viverra. Donec eu
+                                leo urna.
+                                Integer
+                                non risus et magna sollicitudin feugiat ut eu mauris. Etiam a nunc sit amet
+                                dolor
+                                aliquam
+                                eleifend. Pellentesque habitant morbi tristique senectus et netus et malesuada
+                                fames ac
+                                turpis
+                                egestas. Orci varius natoque penatibus et magnis dis parturient montes, nascetur
+                                ridiculus mus.
+                            </p>
+                            <div class="client-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="client-detail">
+                                <h4>Daniel James</h4>
+                                <p>Lorem ipsum dolor</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- col-2 start -->
+                <div class="client-sayimg col-lg-6">
+                    <img src="./image/testmonial-ryt.png" alt="">
+                </div>
+            </div><!-- row end -->
+        </div>
+    </section>
+    <!-- testmonial end -->
+    <!-- Gallery section -->
+    <section class="patent-gallery patent-mainbg">
+        <div class="container">
+            <div class="gallery-title text-center">
+                <h6 class="sub-title">Our Gallery</h6>
+                <h2 class="sub-heading">Captured Moments of Care and Joy</h2>
+                <p class="main-content">Explore the heartwarming moments that showcase the love and care we
+                    provide to
+                    pets through our services.</p>
+            </div>
+            <div class="client-gallery my-5 owl-carousel owl-theme">
+                <div class="joy-img1 item">
+                    <img src="./image/gallery-img1.png" alt="">
+                </div>
+                <div class="joy-img2 item">
+                    <img src="./image/gallery-img2.png" alt="">
+                </div>
+                <div class="joy-img1 item">
+                    <img src="./image/gallery-img3.png" alt="">
+                </div>
+                <div class="joy-img2 item">
+                    <img src="./image/gallery-img4.png" alt="">
+                </div>
+                <div class="joy-img1 item">
+                    <img src="./image/gallery-img5.png" alt="">
+                </div>
+                <div class="joy-img2 item">
+                    <img src="./image/gallery-img6.png" alt="">
+                </div>
+                <div class="joy-img1 item">
+                    <img src="./image/gallery-img7.png" alt="">
+                </div>
+            </div>
+            <p class="mt-3 text-center"><a class="readmore" href="#">View all</a></p>
+        </div>
+    </section>
+
+    <!-- Why Choose Dwiggly section -->
+    <section class="faq-section">
+        <div class="container">
+            <h3 class="sub-heading my-4">Frequently Asked Questions</h3>
+            <div class="faqs-container" itemscope itemtype="https://schema.org/FAQPage">
+                <div class="faqrow-main">
+                    <div class="faq-questnum">01</div>
+                    <div class="faq-singular" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+
+                        <h2 class="faq-question" itemprop="name">What is the return policy?</h2>
+                        <div class="faq-answer" itemscope itemprop="acceptedAnswer"
+                            itemtype="https://schema.org/Answer">
+                            <div itemprop="text">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has
+                                been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                                took a
+                                galley of type and scrambled it to make a type specimen book.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faqrow-main">
+                    <div class="faq-questnum">02</div>
+                <div class="faq-singular" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h2 class="faq-question" itemprop="name">How long does it take to process a refund?</h2>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley of type and scrambled it to make a type specimen book.
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                <div class="faqrow-main">
+                    <div class="faq-questnum">03</div>
+                <div class="faq-singular" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h2 class="faq-question" itemprop="name">What is the policy for late/non-delivery of items ordered
+                        online?</h2>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley of type and scrambled it to make a type specimen book.
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                <div class="faqrow-main">
+                    <div class="faq-questnum">04</div>
+                <div class="faq-singular" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h2 class="faq-question" itemprop="name">Is the product same as shown in pictures?</h2>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley of type and scrambled it to make a type specimen book.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <section class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <!-- 1 -->
+                <div class="shop-location">
+
+                </div>
+                <!-- 2 -->
+                <div class="dwiggly-contact row">
+                    <!-- 1 -->
+                    <div class="col-lg-5 footer-page">
+                        <img src="./image/footer-logo.png" alt="">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus euismod blandit.
+                            Nunc
+                            elit enim, vestibulum in commodo id, varius sagittis nibh. Aliquam enim est,
+                            condimentum ut
+                            consectetur ac, mollis et enim.</p>
+                        <div class="call-footbtn">
+                            <img src="./image/footer-question.png" alt="">
+                            <div class="quest-call">
+                                <a href="tel:+5689 2589 6325">+5689 2589 6325</a>
+                                <p>Got Questions? Call us 24/7</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="col-lg-2 footer-contact">
+                        <h5>About Us</h5>
+                        <ul class="list-unstyled mb-0">
+
+                            <li><a href="#" title="Home">Home</a></li>
+
+                            <li><a href="#" title="About">About</a></li>
+
+                            <li><a href="#" title="Services">Services</a></li>
+
+                            <li><a href="#" title="Pricing">Pricing</a></li>
+
+                        </ul>
+                    </div>
+                    <!-- 3 -->
+                    <div class="col-lg-2 footer-nearlocat">
+                        <h5>Quick Link</h5>
+                        <ul class="list-unstyled mb-0">
+
+                            <li><a href="#" title="FAQ">FAQ</a></li>
+
+                            <li><a href="#" title="Contact">Contact</a></li>
+
+                            <li><a href="#" title="Privacy Policy">Privacy Policy</a></li>
+
+                            <li><a href="#" title="Terms & Conditions">Terms & Conditions</a></li>
+
+                        </ul>
+                    </div>
+                    <!-- 4 -->
+                    <div class="col-lg-3 footer-follow">
+                        <h5>Contact</h5>
+                        <p><span><img src="./image/call-icon.png" alt=""></span><a href="#">123-456-7890</a></p>
+                        <p><span><img src="./image/mail-icon.png" alt=""></span><a href="#">hello@dwiggly.com</a></p>
+                        <p><span><img src="./image/locat-icon.png" alt=""></span>123 Anywhere St., Any City, ST
+                            12345
+                        </p>
+                        <div class="social-icon">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </div>
+                    <!--  -->
+                </div>
+            </div>
+        </div>
+        <div class="foot-copyryt">
+            <p>Copyright © 2024</p>
+        </div>
+    </section>
+    <!-- section 10 end -->
+    <!-- <script type="text/javascript" src="js/jquery-3.6.4.slim.min.js"></script> -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/myscript.js"></script>
+
+
+
+</body>
+
+</html>
