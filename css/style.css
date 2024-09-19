@@ -297,9 +297,38 @@ i.fa-brands.fa-facebook-f {
 
 .dwiggy_bnrsec .bner_conts {
     display: flex;
-    width: 95%;
+    width: 100%;
     align-items: center;
     margin: auto;
+    position: relative;
+}
+
+.satisfied-client .client-says p {
+    margin: 0;
+}
+
+.satisfied-client {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    left: 16%;
+    top: 55%;
+    justify-content: left;
+    width: 18%;
+    margin: auto;
+    background: #fff;
+    border-radius: 45px;
+    padding: 3px 18px;
+}
+
+.client-says {
+    margin-left: 12px;
+}
+
+.satisfied-client .client-says h4 {
+    margin: 0;
+    font-size: 18px;
 }
 
 .home-bannerimg img {
@@ -330,11 +359,11 @@ i.fa-brands.fa-facebook-f {
 }
 
 .dwiggy_bnrsec .home-bannercont {
-    width: 60%;
+    width: 55%;
 }
 
 .dwiggy_bnrsec .home-bannerimg {
-    width: 40%;
+    width: 45%;
 }
 
 .Home-banner .owl-nav.disabled {
@@ -354,7 +383,7 @@ i.fa-brands.fa-facebook-f {
 .Home-banner .owl-dots.disabled {
     position: absolute;
     right: 5rem;
-    bottom: -5rem;
+    bottom: -7rem;
 }
 
 .Home-banner .owl-dot.active span {
@@ -364,6 +393,7 @@ i.fa-brands.fa-facebook-f {
 .Home-banner .item p {
     color: #544E5F;
     font-family: 'Archivo-Regular';
+    width: 80%;
 }
 
 /* about-us */
@@ -759,6 +789,10 @@ label.form-check-label {
     transform: translateX(25px);
 }
 
+.form-mainlft .form-column {
+    width: 100%;
+}
+
 /* How We Operate section start */
 
 .We-Operate-frs p {
@@ -866,15 +900,12 @@ section.We-Operate-section::before {
     padding: 30px 20px;
 }
 
-.petparent-banner form .form-columns {
+.petparent-banner form .form-mainlft {
     display: flex;
     gap: 20px;
     /* Adjust space between columns as needed */
 }
 
-.petparent-banner form .form-column {
-    flex: 1;
-}
 
 .petparent-banner form .form-group {
     margin-bottom: 15px;
@@ -1110,6 +1141,7 @@ section.get-touch-section::before {
     background: #FFFFFF;
     border-radius: 5px;
 }
+
 .faqrow-main {
     display: flex;
     border-bottom: 2px solid #9D9DA1;
@@ -1257,6 +1289,13 @@ section.faq-section {
         text-align: center;
     }
 
+    .satisfied-client {
+        right: 0;
+        left: 20%;
+        top: 60%;
+        width: 28%;
+    }
+
 
 }
 
@@ -1268,7 +1307,6 @@ section.faq-section {
     }
 
     .section.dwiggy_bnrsec {
-        padding: 3rem 0;
         background: linear-gradient(81.68deg, #FCDAB6 -0.3%, #FFF2E3 27.01%, #FFF1E1 81%, #FCDAB6 100%);
     }
 
@@ -1383,8 +1421,16 @@ section.faq-section {
     }
 
     /* home-page */
+    .form-subscribe .input-group {
+        width: 100%;
+    }
+
     .protection-say .col-lg-3 {
         width: 48%;
+    }
+
+    .Home-banner .item p {
+        width: 100%;
     }
 
     .protection-say {
@@ -1418,6 +1464,12 @@ section.faq-section {
         flex-direction: column-reverse;
     }
 
+    .satisfied-client {
+        left: 38%;
+        top: 63%;
+        width: 35%;
+    }
+
 
 }
 
@@ -1432,8 +1484,17 @@ section.faq-section {
     }
 
     .dwiggy_bnrsec .bner_conts {
-        display: block;
+        flex-wrap: wrap;
         width: 100%;
+    }
+
+    .Home-banner .item p,
+    .read-banercont {
+        display: none;
+    }
+
+    .section.dwiggy_bnrsec {
+        padding: 2rem 0 0;
     }
 
     .dwiggy_bnrsec .home-bannercont {
@@ -1443,7 +1504,6 @@ section.faq-section {
     .dwiggy_bnrsec .home-bannerimg {
         width: 100%;
         text-align: center;
-        margin-top: 3rem;
     }
 
     .home-bannerimg img {
@@ -1495,6 +1555,10 @@ section.faq-section {
         width: 100%;
     }
 
+    .satisfied-client {
+        display: none;
+    }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -1543,9 +1607,40 @@ section.faq-section {
         margin-bottom: 25px;
     }
 
+    .newsletter-main .news-lftimg {
+        display: none;
+    }
+
+    .subscrib-ryt {
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    .subscrib-ryt h2 {
+        margin-bottom: 22px;
+        width: 100%;
+        font-size: 25px;
+    }
+
+    .subscrib-ryt h6 {
+        font-size: 18px;
+    }
+
     /* home page */
     .services-row .col-lg-4 {
         width: 100%;
+    }
+
+    .Home-banner .item h2 {
+        font-size: 25px;
+    }
+
+    .sub-heading {
+        font-size: 25px;
+    }
+
+    h6.sub-title {
+        font-size: 16px;
     }
 
     .services-row .col-lg-4.petservice3 {
@@ -1576,6 +1671,13 @@ section.faq-section {
     /* pet parent page */
     .petparent-banner .form-container {
         flex-wrap: wrap;
+        gap: 0;
+    }
+
+    .petparent-banner form .form-mainlft {
+        display: flex;
+        gap: 0;
+        flex-wrap: wrap;
     }
 
     .petparent-banner .column,
@@ -1590,26 +1692,30 @@ section.faq-section {
     .sub-div-1 h4 {
         font-size: 25px;
     }
+
     .faq-singular .faq-question {
         font-size: 20px;
     }
+
     .faqs-container .faq-questnum {
         margin-top: 15px;
     }
 }
 
 @media screen and (max-width: 500px) {
-    .home-bannerimg img {
+
+    .home-bannerimg img,
+    span.input-group-btn {
+        width: 100%;
+    }
+
+    .form-subscribe .input-group-btn button {
+        transform: unset;
         width: 100%;
     }
 }
 
 @media screen and (max-width: 375px) {
-    .read-banercont {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-    }
 
     .read-banercont .watchbtn {
         margin: 0;
