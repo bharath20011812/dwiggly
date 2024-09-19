@@ -172,7 +172,7 @@ p .readmore {
     position: relative;
     width: 70%;
     margin: auto;
-    background-image: url(/image/newsletter-bg.png);
+    background-image: url(../image/newsletter-bg.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     border-radius: 30px;
@@ -289,7 +289,7 @@ i.fa-brands.fa-facebook-f {
 /* home page start */
 .section.dwiggy_bnrsec {
     background-position: center;
-    background-image: url(/image/banner-bg.png);
+    background-image: url(../image/banner-bg.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     position: relative;
@@ -397,7 +397,7 @@ section.about-petcare {
 section.about-petcare::before {
     content: '';
     position: absolute;
-    background-image: url(/image/section-bg.png);
+    background-image: url(../image/section-bg.png);
     width: 30%;
     height: 30%;
     background-repeat: no-repeat;
@@ -458,7 +458,7 @@ section.our-services {
 section.our-services::before {
     position: absolute;
     content: '';
-    background-image: url(/image/testmonial-bg.png);
+    background-image: url(../image/testmonial-bg.png);
     width: 7%;
     height: 100%;
     background-repeat: no-repeat;
@@ -497,7 +497,7 @@ section.founder-story {
 section.founder-story::before {
     content: '';
     position: absolute;
-    background-image: url(/image/section-bg.png);
+    background-image: url(../image/section-bg.png);
     width: 25%;
     height: 100%;
     background-repeat: no-repeat;
@@ -518,7 +518,7 @@ section.testmonial-say {
 section.testmonial-say::before {
     position: absolute;
     content: '';
-    background-image: url(/image/testmonial-bg.png);
+    background-image: url(../image/testmonial-bg.png);
     width: 28%;
     height: 100%;
     background-repeat: no-repeat;
@@ -654,7 +654,7 @@ section.patent-mainbg {
 section.patent-mainbg::before {
     position: absolute;
     content: '';
-    background-image: url(/image/testmonial-bg.png);
+    background-image: url(../image/testmonial-bg.png);
     width: 25%;
     height: 100%;
     background-repeat: no-repeat;
@@ -811,7 +811,7 @@ section.pet-testmonial {
 section.pet-testmonial::before {
     position: absolute;
     content: '';
-    background-image: url(/image/pet-testmonial.png);
+    background-image: url(../image/pet-testmonial.png);
     width: 20%;
     height: 100%;
     background-repeat: no-repeat;
@@ -831,7 +831,7 @@ section.We-Operate-section {
 section.We-Operate-section::before {
     content: '';
     position: absolute;
-    background-image: url(/image/section-bg.png);
+    background-image: url(../image/section-bg.png);
     width: 30%;
     height: 100%;
     background-repeat: no-repeat;
@@ -887,7 +887,7 @@ section.We-Operate-section::before {
 /* conact-page css */
 section.banner-section-con {
     padding: 30px 0;
-    background-image: url(/image/Conact-page-banner-bck.png);
+    background-image: url(../image/Conact-page-banner-bck.png);
 }
 
 section.card-section {
@@ -1038,7 +1038,7 @@ section.get-touch-section {
 section.get-touch-section::before {
     position: absolute;
     content: '';
-    background-image: url(/image/testmonial-bg.png);
+    background-image: url(../image/testmonial-bg.png);
     width: 18%;
     height: 100%;
     background-repeat: no-repeat;
