@@ -696,12 +696,14 @@ section.patent-mainbg::before {
 }
 
 .petparent-banner .banner-main-div {
-    width: 100%;
+    width: 75%;
     display: flex;
-    padding: 30px;
+    margin: auto;
     position: relative;
     z-index: 2;
     align-items: center;
+    background-color: #FFFFFF;
+    border-radius: 25px;
 }
 
 .petparent-banner .form-container {
@@ -734,13 +736,13 @@ section.patent-mainbg::before {
 
 .petparent-banner .banner-img-div {
     width: 45%;
-    text-align: right;
+    background: #DD7D17;
+    border-radius: 25px 0 0 25px;
 }
 
 .banner-main-div .form-div {
     width: 55%;
     background: #fff;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     padding: 33px;
     border-radius: 0 25px 25px 0;
 }
@@ -752,8 +754,7 @@ section.patent-mainbg::before {
 }
 
 .banner-img-div img {
-    width: 95%;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    width: 80%;
     border-radius: 25px 0 0 25px;
 }
 
@@ -919,6 +920,8 @@ section.We-Operate-section::before {
 section.banner-section-con {
     padding: 30px 0;
     background-image: url(../image/Conact-page-banner-bck.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 section.card-section {
@@ -1210,7 +1213,17 @@ section.faq-section {
 /* faq end */
 
 /* responsive */
-@media screen and (max-width: 2500px) {}
+@media screen and (max-width: 2000px) {
+    .petparent-banner .banner-main-div {
+        background: #DD7D17;
+        align-items: end;
+    }
+
+    .banner-img-div img {
+        width: 100%;
+        border-radius: 25px 0 0 25px;
+    }
+}
 
 @media screen and (max-width: 1700px) {}
 
@@ -1221,9 +1234,6 @@ section.faq-section {
         width: 100%;
     }
 
-    .banner-main-div>div {
-        width: 50% !important;
-    }
 }
 
 
@@ -1264,29 +1274,8 @@ section.faq-section {
     }
 
     /* parent page */
-    .banner-main-div>div {
-        width: 100% !important;
-    }
-
     .petparent-banner .banner-main-div {
-        flex-wrap: wrap;
-        gap: 30px;
-        flex-direction: column-reverse;
-        padding: 0;
-    }
-
-    .banner-img-div img {
-        width: 60%;
-        border: 25px;
-        border-radius: 10px;
-    }
-
-    .banner-main-div .form-div {
-        border-radius: 10px;
-    }
-
-    .petparent-banner .banner-img-div {
-        text-align: center;
+        width: 100%;
     }
 
     .satisfied-client {
@@ -1487,9 +1476,11 @@ section.faq-section {
         flex-wrap: wrap;
         width: 100%;
     }
+    .Home-banner .item {
+        margin-bottom: 35px;
+    }
 
-    .Home-banner .item p,
-    .read-banercont {
+    .Home-banner .item p ,.read-banercont .watchbtn{
         display: none;
     }
 
@@ -1550,13 +1541,39 @@ section.faq-section {
     }
 
     /* pet parent page */
-    .banner-img-div img,
     .We-Operate-sub-main .sub-div-1 {
         width: 100%;
     }
 
     .satisfied-client {
         display: none;
+    }
+
+    .banner-main-div .form-div {
+        width: 100% !important;
+        border-radius: 5px;
+        text-align: center;
+
+    }
+
+    .petparent-banner .banner-main-div {
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        gap: 20px;
+        background: transparent;
+    }
+
+    .petparent-banner .banner-img-div {
+        background: transparent;
+        width: 100%;
+        margin: auto;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    .banner-img-div img {
+        border-radius: 5px;
     }
 
 }
@@ -1713,6 +1730,9 @@ section.faq-section {
         transform: unset;
         width: 100%;
     }
+    section.about-petcare {
+        padding: 3rem 0;
+    }
 }
 
 @media screen and (max-width: 375px) {
@@ -1720,6 +1740,7 @@ section.faq-section {
     .read-banercont .watchbtn {
         margin: 0;
     }
+    
 
     .sub-heading {
         font-size: 27px;
