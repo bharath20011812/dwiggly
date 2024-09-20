@@ -696,7 +696,7 @@ section.patent-mainbg::before {
 }
 
 .petparent-banner .banner-main-div {
-    width: 75%;
+    width: 85%;
     display: flex;
     margin: auto;
     position: relative;
@@ -754,7 +754,7 @@ section.patent-mainbg::before {
 }
 
 .banner-img-div img {
-    width: 80%;
+    width: 65%;
     border-radius: 25px 0 0 25px;
 }
 
@@ -1218,15 +1218,15 @@ section.faq-section {
         background: #DD7D17;
         align-items: end;
     }
-
-    .banner-img-div img {
-        border-radius: 25px 0 0 25px;
-    }
 }
 
 @media screen and (max-width: 1700px) {}
 
-@media screen and (max-width: 1600px) {}
+@media screen and (max-width: 1600px) {
+    .banner-img-div img {
+        width: 85%;
+    }
+}
 
 @media screen and (max-width: 1400px) {
     .banner-img-div img {
